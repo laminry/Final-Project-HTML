@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hotel - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="homebody col-lg-12">  <!--homebody-->
+  <!-- <div align="center">
+                    <header>
+                        <img src="lo.png" alt="">
+                    </header>
+        </div> -->
+  <nav class="navbar navbar-primary">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="index.html">Home</a> </li>
+        <li> <a href="rooms.html">Rooms</a> </li>
+        <li> <a href="reservation.html">Reservations</a> </li>
+        <li> <a href="contact.html">Contact</a> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a href="#bookings" data-toggle="modal"> <span class="glyphicon glyphicon-home"></span> Booking</a> </li>
+        <li> <a href="#login" data-toggle="modal"> <span class="glyphicon glyphicon-user"></span> Login</a> </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid col-lg-0 col-lg-offset-1 col-lg-10">
+    <form action="">
+                <p align="center" style="color:#008A43">
+                  <strong>SEACH BY FILLING THE FORM</strong>
+                </p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Check-In</th>
+            <th>Check-Out</th>
+            <th>No. Adults</th>
+            <th>No. Children</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <input class="form-control" type="text" id="Datepicker2">
+            </th>
+            <td>
+              <input class="form-control" type="text" id="Datepicker1">
+            </td>
+            <td>
+              <div class="form-group">
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <select class="form-control" id="sel1l">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+        
+        </tbody>
+
+      </table>
+                <div align="center"> <button type="submit" class="btn btn-success"> <strong> Search Room</strong</button> </div>
+    </form>
+  </div>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="bookings" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form action="getbookings.php" method="POST">
+          <div class="modal-header">
+            <h5 class="modal-title">Confirm Booking</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group" align="center">
+              <label id="username">Enter Bookings Code</label>
+              <input type="text" class="form-control" id="inputcode" placeholder="Enter confirmation code">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+	
+	<div id="login" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form action="connection.php" method="POST">
+          <div class="modal-header">
+            <h5 class="modal-title">Operator Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group" align="center">
+              <label id="inputuser">Ennter User ID</label>
+              <input type="text" class="form-control" id="inputuser" placeholder="Enter User ID">
+            </div>
+			  <div class="form-group" align="center">
+              <label id="inputpassword">Enter User Password </label>
+              <input type="text" class="form-control" id="inputpassword" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+$(function() {
+	$( "#Datepicker1" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepicker2" ).datepicker(); 
+});
+</script>
+</body>
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Go Menu</a>
+        </p>
+        <p>Sweet Residence</p>
+        <p>Home for you?</p>
+      </div>
+    </footer>
+</html>

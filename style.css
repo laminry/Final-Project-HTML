@@ -1,0 +1,155 @@
+.homebody{
+    background-image: url(images/mainback.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+
+}
+
+
+.roomsbody{
+    background-image: url(images/sea.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+
+}
+
+.contactbody{
+    background-image: url(images/mainback.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+
+}
+
+.contactbody{
+    background-image: url(images/mainback.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+
+}
+
+.reservationbody{
+    background-image: url(images/mainback.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+
+}
+
+.reservationbody > .reservationform{
+    background:rgba(0,0,0,0.38);
+    width: 600px;
+    color: white;
+}
+
+.reservationbody > .reservationform >form{
+    border-radius: 15px;
+}
+
+
+nav a{
+color:white;
+}
+
+nav a:hover{
+    transform: scale(1.0);
+    border-radius: 10px;
+    color: red;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    
+}
+
+
+
+.jumbotron
+{	
+	margin-top: 100px;
+	background-color: rgba(0,0,0,0.61);
+	color: white;
+	height: 300px;
+    border: groove;
+}
+
+.jumbotron input, option
+{	
+	color: black;
+	
+}
+
+
+.jumbotron input:hover, select:hover
+{	
+    background-color: rgb(223, 157, 66);
+    transform: scale(1.1);
+      transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  backface-visibility: hidden;
+	
+}
+
+
+.holder{
+	background-color: rgba(0,0,0,0.38);
+}
+
+.row.no-gutter {
+  margin-left: 2%;
+  margin-right: 2px;
+	margin-top: 40px;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.1);
+	border-color: rgb(223, 157, 66);
+}
+
+
+.img-thumbnail {
+  display: block;
+  height: auto;
+  position: relative;
+}
+
+
+
+
+.album{
+min-height: 50rem;
+padding-top: 3rem;
+padding-bottom: 3rem;
+background-color: #f7f7f7;
+
+}
+
+
+.card{
+position: relative;
+float: left;
+width: 33.333%;
+padding: .75rem;
+margin-bottom: 2rem;
+border: 0;
+border: red;
+}
+
+.card > img{
+    margin-bottom: .75rem;
+}
+
+.roomprice{
+    position: absolute;
+}
+
+/* 
+.text-muted{
+background-color: purple;
+} */
